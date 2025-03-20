@@ -13,6 +13,16 @@ public:
     double getSalary();
     int getHiredyear();
 
+    void set_IdNum(int);
+    void set_firstName(string);
+    void set_lastName(string);
+    void set_hiredYear(int);
+    void set_dob(string);
+    void set_salary(double);
+    void set_address(string);
+    void set_telArea(int);
+    void set_telNum(string);
+
     // void set_IdNum(int id);
     // void set_firstName(string);
     // void set_lastName(string);

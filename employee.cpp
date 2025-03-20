@@ -41,41 +41,41 @@ void Employee::set_Info(int number){
     cin >>tel_area>>tel_num;
 }
 
-//void Employee::set_IdNum(int id){
-//    employeeId = id;
-//}
-//
-//void Employee::set_firstName(string first) {
-//    first_name = first;
-//}
-//
-//void Employee::set_lastName(string last) {
-//    last_name = last;
-//}
-//
-//void Employee::set_hiredYear(int hired) {
-//    year_hired = hired;
-//}
-//
-//void Employee::set_dob(string date) {
-//    dob = date;
-//}
-//
-//void Employee::set_salary(double sal) {
-//    salary = sal;
-//}
-//
-//void Employee::set_address(string add) {
-//    address = add;
-//}
-//
-//void Employee::set_telArea(int area) {
-//    tel_area = area;
-//}
-//
-//void Employee::set_telNum(string num) {
-//    tel_num = num;
-//}
+void Employee::set_IdNum(int id){
+    employeeId = id;
+}
+
+void Employee::set_firstName(string first) {
+    first_name = first;
+}
+
+void Employee::set_lastName(string last) {
+    last_name = last;
+}
+
+void Employee::set_hiredYear(int hired) {
+    year_hired = hired;
+}
+
+void Employee::set_dob(string date) {
+    dob = date;
+}
+
+void Employee::set_salary(double sal) {
+    salary = sal;
+}
+
+void Employee::set_address(string add) {
+    address = add;
+}
+
+void Employee::set_telArea(int area) {
+    tel_area = area;
+}
+
+void Employee::set_telNum(string num) {
+    tel_num = num;
+}
 
 string Employee::getLastname() {
     return last_name;
@@ -90,7 +90,7 @@ double Employee::getSalary() {
 }
 
 void Employee::print_Info(int num){
-    cout<<"Employee No."<<num<<endl;
+    cout<<"Employee No."<<num+1<<endl;
     cout << "Id: " << employeeId << endl;
     cout << "First Last Name: "<<first_name<<" "<<last_name<<endl;
     cout <<"Hired year: "<<year_hired<<endl;
