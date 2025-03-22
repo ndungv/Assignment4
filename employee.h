@@ -1,3 +1,6 @@
+//Joseph Tchatchoua Nchuisseu ID: 40309336
+//
+
 //employee.h
 #pragma once
 #include <string>
@@ -6,6 +9,7 @@ using namespace std;
 class Employee {
 
 public:
+    //Public constructor and memeber functions
     Employee();
     static void print_Info(int, Employee (&emp)[2]);
 
@@ -47,6 +51,8 @@ public:
     // void set_telArea(int);
     // void set_telNum(string);
 private:
+
+    //employee attributes
     int employeeId;
     string first_name;
     string last_name;

@@ -1,5 +1,8 @@
+//Joseph Tchatchoua Nchuisseu ID: 40309336
+//
 //main function
 //testemployee.cpp
+
 #include <iostream>
 #include "employee.h"
 using namespace std;
@@ -7,13 +10,14 @@ using namespace std;
 const int employee_num = 2;
 Employee emp[employee_num];
 
+//prototypes
 void repeat();
 void printer(Employee (&emp)[2]);
 void modifier();
 
 int main() {
 
-
+//Modifying the attributes for inputed employees
   for (int i = 0; i < employee_num; i++) {
     emp[i].set_Info(i + 1);
     cout << endl << "-------------" << endl;
@@ -23,6 +27,7 @@ int main() {
 
 }
 
+//Loops to check if user wants to modify employe data
 void repeat() {
   string choice;
   while (true) {
@@ -42,6 +47,7 @@ void repeat() {
   }
 }
 
+//Displaying info about same name, salary, date hired
 void printer(Employee (&emp)[2]) {
   cout <<"--------------------"<<endl;
   cout<<"EMPLOYEES INFO:"<<endl;
@@ -58,6 +64,7 @@ void printer(Employee (&emp)[2]) {
 }
 
 
+//Handle cases for modifiying employee info
 void modifier() {
   int emp_input;
   int emp_num;
@@ -144,7 +151,3 @@ void modifier() {
   printer(emp);
   repeat();
 }
-
-
-
-

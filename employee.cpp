@@ -1,3 +1,5 @@
+//Joseph Tchatchoua Nchuisseu ID: 40309336
+//
 //employee.cpp
 //member function
 #include <iostream>
@@ -5,6 +7,7 @@
 #include <iomanip>
 using namespace std;
 
+//Default constructor
 Employee::Employee() {
     employeeId = 0;
     first_name = "";
@@ -17,6 +20,7 @@ Employee::Employee() {
     tel_num = "";
 }
 
+//Modifiying employee attributes
 void Employee::set_Info(int number){
 
     cout << "Please enter these data of No."<<number<<" employee in respectively order (separated by space): "<<endl;
@@ -41,6 +45,7 @@ void Employee::set_Info(int number){
     cin >>tel_area>>tel_num;
 }
 
+//Accessors and mutators of employee
 void Employee::set_IdNum(int id){
     employeeId = id;
 }
@@ -117,7 +122,7 @@ string Employee::getNum() {
 }
 
 
-
+//Returning attributes of employee
 void Employee::print_Info(int num, Employee (&emp)[2]){
     cout<<"Employee No."<<num+1<<endl;
     cout << "Id: " << emp[num].getId() << endl;
@@ -129,6 +134,7 @@ void Employee::print_Info(int num, Employee (&emp)[2]){
     cout<<"Telephone: "<<emp[num].getArea()<<" "<<emp[num].getNum()<<endl;
 }
 
+//Cheking same laste name
 bool Employee::sameLastname(Employee emp[]) {
     if (emp[0].getLastname() == emp[1].getLastname()) {
         return true;
@@ -138,6 +144,7 @@ bool Employee::sameLastname(Employee emp[]) {
     }
 }
 
+//Cheking same salary
 bool Employee::sameSalary(Employee emp[]) {
     if (emp[0].getSalary() == emp[1].getSalary()) {
         return true;
@@ -147,6 +154,7 @@ bool Employee::sameSalary(Employee emp[]) {
     }
 }
 
+//Cheking same hired year
 bool Employee::sameHiredyear(Employee emp[]) {
     if (emp[1].getHiredyear() == emp[0].getHiredyear()) {
         return true;
