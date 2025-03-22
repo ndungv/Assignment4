@@ -7,25 +7,11 @@ class Employee {
 
 public:
     Employee();
-    static void print_Info(int, Employee (&emp)[2]);
-
-    static bool sameLastname(Employee emp[]);
-    static bool sameSalary(Employee emp[]);
-    static bool sameHiredyear(Employee emp[]);
-
-
+    void print_Info(int);
     void set_Info(int number);
-
-
-    int getId();
-    string getFirstname();
     string getLastname();
-    string getdob();
-    string getAddress();
     double getSalary();
     int getHiredyear();
-    int getArea();
-    string getNum();
 
     void set_IdNum(int);
     void set_firstName(string);
@@ -36,6 +22,8 @@ public:
     void set_address(string);
     void set_telArea(int);
     void set_telNum(string);
+
+    bool sameLastname();
 
     // void set_IdNum(int id);
     // void set_firstName(string);

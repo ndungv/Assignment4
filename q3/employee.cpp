@@ -77,28 +77,9 @@ void Employee::set_telNum(string num) {
     tel_num = num;
 }
 
-
-
-
-//Call functions
-int Employee::getId() {
-    return employeeId;
-}
-string Employee::getFirstname() {
-    return first_name;
-}
-
 string Employee::getLastname() {
     return last_name;
 }
-string Employee::getdob() {
-    return dob;
-}
-
-string Employee::getAddress() {
-    return address;
-}
-
 
 int Employee::getHiredyear() {
     return year_hired;
@@ -108,50 +89,15 @@ double Employee::getSalary() {
     return salary;
 }
 
-int Employee::getArea() {
-    return tel_area;
-}
-
-string Employee::getNum() {
-    return tel_num;
-}
 
 
-
-void Employee::print_Info(int num, Employee (&emp)[2]){
+void Employee::print_Info(int num){
     cout<<"Employee No."<<num+1<<endl;
-    cout << "Id: " << emp[num].getId() << endl;
-    cout << "First Last Name: "<<emp[num].getFirstname()<<" "<<emp[num].getLastname()<<endl;
-    cout <<"Hired year: "<<emp[num].getHiredyear()<<endl;
-    cout<<"Date of birth: "<<emp[num].getdob()<<endl;
-    cout << "Salary: "<<fixed<<setprecision(0)<<emp[num].getSalary()<<endl;
-    cout<<"Address: "<<emp[num].getAddress()<<endl;
-    cout<<"Telephone: "<<emp[num].getArea()<<" "<<emp[num].getNum()<<endl;
-}
-
-bool Employee::sameLastname(Employee emp[]) {
-    if (emp[0].getLastname() == emp[1].getLastname()) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-bool Employee::sameSalary(Employee emp[]) {
-    if (emp[0].getSalary() == emp[1].getSalary()) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-bool Employee::sameHiredyear(Employee emp[]) {
-    if (emp[1].getHiredyear() == emp[0].getHiredyear()) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    cout << "Id: " << employeeId << endl;
+    cout << "First Last Name: "<<first_name<<" "<<last_name<<endl;
+    cout <<"Hired year: "<<year_hired<<endl;
+    cout<<"Date of birth: "<<dob<<endl;
+    cout << "Salary: "<<fixed<<setprecision(0)<<salary<<endl;
+    cout<<"Address: "<<address<<endl;
+    cout<<"Telephone: "<<tel_area<<" "<<tel_num<<endl;
 }
